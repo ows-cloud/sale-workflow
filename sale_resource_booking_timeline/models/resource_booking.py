@@ -10,11 +10,11 @@ class ResourceBooking(models.Model):
         string="Show in Timeline",
     )
 
-    duration_in_timeline = fields.Float(
-        string="Duration in timeline",
-        default=0.5,  # 30 minutes
-    )
+    # duration_in_timeline = fields.Float(
+    #     string="Duration in timeline",
+    #     default=0.5,  # 30 minutes
+    # )
 
-    @api.onchange("duration_in_timeline")
-    def _onchange_duration_in_timeline(self):
-        self.duration = self.duration_in_timeline
+    # @api.onchange("duration_in_timeline")
+    # def _onchange_duration_in_timeline(self):
+    #     self.duration = self.duration_in_timeline

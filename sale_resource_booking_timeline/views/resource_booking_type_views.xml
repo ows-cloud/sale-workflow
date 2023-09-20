@@ -6,7 +6,7 @@
         <field name="inherit_id" ref="resource_booking.resource_booking_type_form" />
         <field name="arch" type="xml">
             <field name="duration" position="after">
-                <field name="duration_in_timeline" widget="float_time" groups="base.group_no_one" />
+                <!-- <field name="duration_in_timeline" widget="float_time" groups="base.group_no_one" /> -->
             </field>
         </field>
     </record>
