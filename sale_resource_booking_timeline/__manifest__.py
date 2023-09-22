@@ -12,7 +12,7 @@
         "views/resource_booking_views.xml",
     ],
     "depends": [
-        "sale_resource_booking",
+        "sale_resource_booking",  # with booking.product_id
         "web_timeline",
     ],
     "license": "AGPL-3",

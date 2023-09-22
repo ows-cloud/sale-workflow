@@ -6,7 +6,7 @@
         <field name="inherit_id" ref="resource_booking.resource_booking_form" />
         <field name="arch" type="xml">
             <group name="booking" position="inside">
-                <field name="product_template_ids" widget="many2many_tags" />
+                <field name="available_product_tmpl_ids" widget="many2many_tags" />
                 <!-- <field name="duration_in_timeline" widget="float_time" /> -->
             </group>
         </field>

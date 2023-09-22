@@ -6,9 +6,9 @@
         <field name="inherit_id" ref="product.product_template_form_view" />
         <field name="arch" type="xml">
             <notebook position="inside">
-                <page name="resource_booking" string="Timeline">
-                    <group name="resource_booking" string="Timeline">
-                        <field name="resource_booking_ids" />
+                <page name="resource_booking" string="Booking">
+                    <group name="resource_booking" string="Intervals available for booking">
+                        <field name="available_booking_interval_ids" />
                     </group>
                 </page>
             </notebook>
