@@ -26,7 +26,7 @@ class ResourceBooking(models.Model):
         # If available times are registered on the product of the booking,
         # then restrict to these available times.
         result = super()._get_available_slots(start_dt, end_dt)
-        restrict_to_these_available_times = self.product_id.timeline_booking_ids
+        restrict_to_these_available_times = self.product_id.available_booking_interval_ids
         if restrict_to_these_available_times:
             for result_date, result_dts in result.items():
                 new_dts = []
