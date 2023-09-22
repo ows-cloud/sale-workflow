@@ -18,7 +18,7 @@ class ProductProduct(models.Model):
         # Include "Show in timeline"
         action["domain"] = [
             "|",
-            ("product_template_ids", "in", self.product_tmpl_id.id),
+            ("available_product_tmpl_ids", "in", self.product_tmpl_id.id),
             ("combination_id", "in", combination_ids),
         ]
 
