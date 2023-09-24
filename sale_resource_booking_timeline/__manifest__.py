@@ -8,7 +8,6 @@
     "category": "Appointments",
     "data": [
         "views/product_template_views.xml",
-        "views/resource_booking_type_views.xml",
         "views/resource_booking_views.xml",
     ],
     "depends": [
