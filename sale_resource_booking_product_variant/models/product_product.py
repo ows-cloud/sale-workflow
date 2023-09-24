@@ -53,14 +53,3 @@ class ProductProduct(models.Model):
                 )
 
         return products
-
-    def action_view_resource_booking(self):
-        action = super().action_view_resource_booking()
-
-        try:
-            # depends on partner_product_price
-            action["context"]["default_partner_id"] = self.partner_id.id
-        except:
-            pass
-
-        return action
